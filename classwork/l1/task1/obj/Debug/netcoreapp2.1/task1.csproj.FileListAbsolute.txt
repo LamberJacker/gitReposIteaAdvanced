@@ -1,0 +1,11 @@
+D:\vlad_C#\C#Essential\L1\task1\bin\Debug\netcoreapp2.1\task1.deps.json
+D:\vlad_C#\C#Essential\L1\task1\bin\Debug\netcoreapp2.1\task1.runtimeconfig.json
+D:\vlad_C#\C#Essential\L1\task1\bin\Debug\netcoreapp2.1\task1.runtimeconfig.dev.json
+D:\vlad_C#\C#Essential\L1\task1\bin\Debug\netcoreapp2.1\task1.dll
+D:\vlad_C#\C#Essential\L1\task1\bin\Debug\netcoreapp2.1\task1.pdb
+D:\vlad_C#\C#Essential\L1\task1\obj\Debug\netcoreapp2.1\task1.csprojAssemblyReference.cache
+D:\vlad_C#\C#Essential\L1\task1\obj\Debug\netcoreapp2.1\task1.csproj.CoreCompileInputs.cache
+D:\vlad_C#\C#Essential\L1\task1\obj\Debug\netcoreapp2.1\task1.AssemblyInfoInputs.cache
+D:\vlad_C#\C#Essential\L1\task1\obj\Debug\netcoreapp2.1\task1.AssemblyInfo.cs
+D:\vlad_C#\C#Essential\L1\task1\obj\Debug\netcoreapp2.1\task1.dll
+D:\vlad_C#\C#Essential\L1\task1\obj\Debug\netcoreapp2.1\task1.pdb

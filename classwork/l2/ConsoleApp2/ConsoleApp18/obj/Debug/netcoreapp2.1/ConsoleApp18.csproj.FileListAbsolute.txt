@@ -1,0 +1,11 @@
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.deps.json
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.runtimeconfig.json
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.runtimeconfig.dev.json
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.dll
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.pdb
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.csproj.CoreCompileInputs.cache
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.AssemblyInfoInputs.cache
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.AssemblyInfo.cs
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.dll
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.pdb
+C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.csprojAssemblyReference.cache

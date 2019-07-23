@@ -9,3 +9,14 @@ C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\Cons
 C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.dll
 C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.pdb
 C:\Users\Den\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.csprojAssemblyReference.cache
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.deps.json
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.runtimeconfig.json
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.runtimeconfig.dev.json
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.dll
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\bin\Debug\netcoreapp2.1\ConsoleApp18.pdb
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.csprojAssemblyReference.cache
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.csproj.CoreCompileInputs.cache
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.AssemblyInfoInputs.cache
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.AssemblyInfo.cs
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.dll
+D:\itea\classwork\l2\ConsoleApp2\ConsoleApp18\obj\Debug\netcoreapp2.1\ConsoleApp18.pdb

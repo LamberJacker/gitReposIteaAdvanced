@@ -57,6 +57,7 @@ namespace h2
                     break;
             }
         }
+        public string Name { get { return name; } set { name = value; } }
     }
     class PhantomDancer : Hero, ICloneable
     {

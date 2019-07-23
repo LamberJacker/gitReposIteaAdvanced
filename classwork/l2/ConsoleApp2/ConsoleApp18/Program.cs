@@ -78,7 +78,7 @@ namespace ConsoleApp18
     {
         static void Main(string[] args)
         {
-            NoGen noGen = new NoGen(45);
+            NoGen noGen = new NoGen("hello");
             Console.WriteLine("Type: " + noGen.getObjType());
             String str = (String)noGen.getObj();
             Console.WriteLine(str);

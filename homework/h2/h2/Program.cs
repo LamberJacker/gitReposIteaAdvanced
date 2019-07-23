@@ -29,7 +29,7 @@ namespace h2
             PhantomDancer newTryHero = new PhantomDancer(phantomDancer);
             newTryHero.ShowHeroStats();
             Console.WriteLine(clonePhantomDancer.getUltimate()[0]);
-
+            
 
             Console.ReadKey();
         }

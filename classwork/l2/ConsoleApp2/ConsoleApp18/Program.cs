@@ -3,12 +3,13 @@ using System.Collections;
 
 namespace ConsoleApp18
 {
-    class Car:ICloneable, IEnumerable, IEnumerator
+    class Car : ICloneable
     {
-       private String model="Peugeot 308" ;
+        private String model="Peugeot 308" ;
         Engine engine;
         public Car() { }
-        public Car(String model,Engine engine) {
+        public Car(String model,Engine engine)
+        {
             this.model = model;
             this.engine = engine;
         }
@@ -16,7 +17,6 @@ namespace ConsoleApp18
         {
             model = car.model;
             engine = new Engine(car.engine);
-
         }
         public object Clone()
         {
@@ -33,9 +33,9 @@ namespace ConsoleApp18
         }
 
     }
-    class Engine:ICloneable
+    class Engine : ICloneable
     {
-        public String mark="Renault";
+        public String mark = "Renault";
         double volume = 1.8;
         public Engine() { }
         public Engine(String mark,double volume)
@@ -43,7 +43,8 @@ namespace ConsoleApp18
             this.mark = mark;
             this.volume = volume;
         }
-        public Engine(Engine engine) {
+        public Engine (Engine engine)
+        {
             mark = engine.mark;
             volume = engine.volume;
         }

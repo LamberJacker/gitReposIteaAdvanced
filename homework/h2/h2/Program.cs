@@ -7,12 +7,12 @@ namespace h2
         static void Main()
         {
             // First Phantom:
-            Hero phantomDancer = new PhantomDancer();
+            PhantomDancer phantomDancer = new PhantomDancer();
             phantomDancer.ShowHeroStats();
             Console.WriteLine(phantomDancer.getUltimate()[0]);
-            
+
             // First clone of Phantom:
-            Hero clonePhantomDancer = (PhantomDancer)phantomDancer.Clone();
+            PhantomDancer clonePhantomDancer = (PhantomDancer)phantomDancer.Clone();
             clonePhantomDancer.ShowHeroStats();
             Console.WriteLine(clonePhantomDancer.getUltimate()[0]);
             
@@ -25,6 +25,11 @@ namespace h2
             Hero antiMage = new AntiMage();
             antiMage.ShowHeroStats();
             Console.WriteLine(antiMage.getUltimate()[0]);
+
+            PhantomDancer newTryHero = new PhantomDancer(phantomDancer);
+            newTryHero.ShowHeroStats();
+            Console.WriteLine(clonePhantomDancer.getUltimate()[0]);
+
 
             Console.ReadKey();
         }

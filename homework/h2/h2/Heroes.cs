@@ -5,7 +5,7 @@ using System.Text;
 
 namespace h2
 {
-    abstract class Hero : ICloneable
+    abstract class Hero
     {
         protected string name;
         protected int agility;
@@ -17,6 +17,16 @@ namespace h2
         public Hero()
         {
             AddItem();
+        }
+
+        public Hero(Hero hero)
+        {
+            name = hero.name;
+            agility = hero.agility;
+            intelligence = hero.intelligence;
+            strength = hero.strength;
+            strikePwr = hero.strikePwr;
+            item = hero.item;
         }
         public void ShowHeroStats()
         {
@@ -47,12 +57,8 @@ namespace h2
                     break;
             }
         }
-        public virtual object Clone()
-        {
-            return null;
-        }
     }
-    class PhantomDancer : Hero
+    class PhantomDancer : Hero, ICloneable
     {
         public PhantomDancer()
         {
@@ -62,9 +68,27 @@ namespace h2
             strength += 25;
             strikePwr += agility * 2 + intelligence * 1 + strength * 3;
         }
-        public override object Clone()
+        public PhantomDancer(PhantomDancer mage)
         {
-            return new PhantomDancer();
+            name = mage.name;
+            agility = mage.agility;
+            intelligence = mage.intelligence;
+            strength = mage.strength;
+            strikePwr = mage.strikePwr;
+            item = mage.item;
+        }
+        public PhantomDancer(string name, int agility, int intelligence, int strength, int strikePwr, Item item)
+        {
+            this.name = name;
+            this.agility = agility;
+            this.intelligence = intelligence;
+            this.strength = strength;
+            this.strikePwr = strikePwr;
+            this.item = item;
+        }
+        public object Clone()
+        {
+            return new PhantomDancer(name, agility, intelligence, strength, strikePwr, item);
         }
         public override ArrayList getUltimate()
         {
@@ -72,7 +96,7 @@ namespace h2
             else return new ArrayList() { "Ult is Done" };
         }
     }
-    class AntiMage : Hero
+    class AntiMage : Hero, ICloneable
     {
         public AntiMage()
         {
@@ -82,9 +106,28 @@ namespace h2
             strength += 5;
             strikePwr += agility * 3 + intelligence * 1 + strength * 1;
         }
-        public override object Clone()
+        public AntiMage(AntiMage mage)
         {
-            return new AntiMage();
+            name = mage.name;
+            agility = mage.agility;
+            intelligence = mage.intelligence;
+            strength = mage.strength;
+            strikePwr = mage.strikePwr;
+            item = mage.item;
+        }
+        public AntiMage(string name, int agility, int intelligence, int strength, int strikePwr, Item item)
+        {
+            this.name = name;
+            this.agility = agility;
+            this.intelligence = intelligence;
+            this.strength = strength;
+            this.strikePwr = strikePwr;
+            this.item = item;
+        }
+
+        public object Clone()
+        {
+            return new AntiMage(name, agility, intelligence, strength, strikePwr, item);
         }
         public override ArrayList getUltimate()
         {

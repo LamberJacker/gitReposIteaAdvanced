@@ -1,105 +1,125 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-
-
 namespace task2
 {
-    class MyCollection<T> : ICollection, IList where T
+    class MyCollection<T> : ICollection<T>, IList<T> where T : Animal
     {
-        int[] arr = new int[4];
-        int length = 0;
+
+        Animal[] arr = new Animal[4];
         int capacity = 4;
-        int currentIndex = 0;
+        int position = 0;
 
-        int ICollection.Count => throw new NotImplementedException();
-
-        public bool IsSynchronized => throw new NotImplementedException();
-
-        public object SyncRoot => throw new NotImplementedException();
-
-        public bool IsFixedSize => throw new NotImplementedException();
-
+        public MyCollection() { }
         public bool IsReadOnly => throw new NotImplementedException();
-
-        object IList.this[int index] { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
-        public int this[int index]
+        int ICollection<T>.Count // well done 
         {
             get
             {
-                return arr[index];
+                int count = 0;
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    if (arr[i] != null)
+                        count++;
+                }
+                return count;
+            }
+        }
+        public T Current() // well done 
+        {
+            return (T)arr[position];
+        }
+        T IList<T>.this[int index] // well done 
+        {
+            get
+            {
+                return (T)arr[index];
             }
             set
             {
                 arr[index] = value;
             }
         }
-
-        public int Count()
+        public int Count() // well done 
         {
             int count = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] == 0) count++;
+                if (arr[i] != null)
+                    count++;
             }
             return count;
         }
-        public int Capacity()
+        public int Capacity() // well done 
         {
             return arr.Length;
         }
 
-        public void CopyTo(Array array, int index)
+        public void Add(T item) // well done 
+        {
+            if (position == capacity)
+            {
+                Animal[] temp = new Animal[arr.Length * 2];
+                Array.Copy(arr, temp, arr.Length);
+                arr = temp;
+                capacity *= 2;
+            }
+            arr[position++] = item;
+        }
+        public int IndexOf(T item)
+        {
+            int indexOf = 0, i = 0;
+            while (item != arr[i++])
+            {
+                indexOf++;
+            }
+            return indexOf;
+        }
+
+        public void Clear() // not now 
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerator GetEnumerator()
+        public bool Contains(T item) //not now 
         {
             throw new NotImplementedException();
         }
 
-        public void Clear()
+        public void CopyTo(T[] array, int arrayIndex) //not now 
         {
             throw new NotImplementedException();
         }
 
-        public bool Contains(object value)
+        public bool Remove(T item)
         {
             throw new NotImplementedException();
         }
 
-        public int IndexOf(object value)
+        public IEnumerator<T> GetEnumerator()
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(int index, object value)
+        IEnumerator IEnumerable.GetEnumerator()
         {
             throw new NotImplementedException();
         }
 
-        public void Remove(object value)
+        public void Insert(int index, T item)
         {
             throw new NotImplementedException();
         }
 
         public void RemoveAt(int index)
         {
-            throw new NotImplementedException();
-        }
-
-        public int Add(object value)
-        {
-            if (length == capacity)
+            arr[index] = null;
+            for (int i = 0; i < arr.Length - 1 - index; i++)
             {
-                int[] temp = new int[arr.Length * 2];
-                Array.Copy(arr, temp, arr.Length);
+                Animal temp = null;
+                arr[index] = temp;
+                arr[index] = arr[index + 1];
             }
-            arr[currentIndex++] = (int)value;
-            length = currentIndex;
-            return 0;
         }
     }
 }

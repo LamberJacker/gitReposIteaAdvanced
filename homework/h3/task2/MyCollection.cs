@@ -3,12 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 namespace task2
 {
-    class MyCollection<T> : ICollection<T>, IList<T> where T : Animal
+    class MyCollection<T> : ICollection<T>, IList<T>, IEnumerable<T>, IEnumerator<T> where T : Animal
     {
 
         Animal[] arr = new Animal[4];
         int capacity = 4;
         int position = 0;
+        int positionMV = -1;
 
         public MyCollection() { }
         public bool IsReadOnly => throw new NotImplementedException();
@@ -91,27 +92,38 @@ namespace task2
             throw new NotImplementedException();
         }
 
-        public bool Remove(T item)
+        public bool Remove(T item)// not done
         {
             throw new NotImplementedException();
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return this as IEnumerator<T>;
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return this as IEnumerator;
         }
-
+        
         public void Insert(int index, T item)
         {
             throw new NotImplementedException();
         }
+        T IEnumerator<T>.Current
+        {
+            get
+            {
+                return (T)arr[positionMV];
+            }
+        }
+        object IEnumerator.Current
+        {
+            get { return arr[positionMV]; }
+        }
 
-        public void RemoveAt(int index)
+        public void RemoveAt(int index) // 50 - 50 
         {
             arr[index] = null;
             for (int i = 0; i < arr.Length - 1 - index; i++)
@@ -119,6 +131,45 @@ namespace task2
                 Animal temp = null;
                 arr[index] = temp;
                 arr[index] = arr[index + 1];
+            }
+        }
+
+        public bool MoveNext() // well done 
+        {
+            if (positionMV < position-1)
+            {
+                positionMV++;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void Reset() // well done 
+        {
+            positionMV = -1;
+        }
+
+        public void Dispose() // well done 
+        {
+            this.Reset();
+        }
+        public void FindType(string type)
+        {
+            for (int i = 0; i < position - 1; i++)
+            {
+                if (arr[i].Type == type)
+                    Console.WriteLine("index of " + type + " is " + i);  
+            }
+        }
+        public void FindName(string name)
+        {
+            for (int i = 0; i < position - 1; i++)
+            {
+                if (arr[i].Name == name)
+                    Console.WriteLine("index of " + name + " is " + i);
             }
         }
     }

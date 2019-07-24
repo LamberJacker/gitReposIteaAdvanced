@@ -12,10 +12,24 @@ namespace task2
             this.name = name;
             this.type = type;
         }
-        public abstract void GetVoice();
+        public abstract string GetVoice();
         public override string ToString()
         {
-            return "Name " + name + " type " + type;
+            return "Name : " + name + " type : " + type;
+        }
+        public string Type
+        {
+            get
+            {
+                return type;
+            }
+        }
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
         }
     }
     class Dog : Animal
@@ -25,9 +39,9 @@ namespace task2
             base.name = name;
             base.type = type;
         }
-        public override void GetVoice()
+        public override string GetVoice()
         {
-            Console.WriteLine("i`m a Dog");
+            return "DOG";
         }
     }
     class Cat : Animal
@@ -37,9 +51,9 @@ namespace task2
             base.name = name;
             base.type = type;
         }
-        public override void GetVoice()
+        public override string GetVoice()
         {
-            Console.WriteLine("i`m a Cat");
+           return "CAT";
         }
     }
 }

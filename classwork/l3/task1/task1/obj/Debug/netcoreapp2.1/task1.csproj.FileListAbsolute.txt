@@ -1,0 +1,11 @@
+D:\itea\classwork\l3\task1\task1\obj\Debug\netcoreapp2.1\task1.csprojAssemblyReference.cache
+D:\itea\classwork\l3\task1\task1\obj\Debug\netcoreapp2.1\task1.csproj.CoreCompileInputs.cache
+D:\itea\classwork\l3\task1\task1\obj\Debug\netcoreapp2.1\task1.AssemblyInfoInputs.cache
+D:\itea\classwork\l3\task1\task1\obj\Debug\netcoreapp2.1\task1.AssemblyInfo.cs
+D:\itea\classwork\l3\task1\task1\bin\Debug\netcoreapp2.1\task1.deps.json
+D:\itea\classwork\l3\task1\task1\bin\Debug\netcoreapp2.1\task1.runtimeconfig.json
+D:\itea\classwork\l3\task1\task1\bin\Debug\netcoreapp2.1\task1.runtimeconfig.dev.json
+D:\itea\classwork\l3\task1\task1\bin\Debug\netcoreapp2.1\task1.dll
+D:\itea\classwork\l3\task1\task1\bin\Debug\netcoreapp2.1\task1.pdb
+D:\itea\classwork\l3\task1\task1\obj\Debug\netcoreapp2.1\task1.dll
+D:\itea\classwork\l3\task1\task1\obj\Debug\netcoreapp2.1\task1.pdb

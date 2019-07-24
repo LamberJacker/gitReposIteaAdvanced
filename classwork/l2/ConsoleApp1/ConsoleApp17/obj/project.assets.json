@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LamberJack\\.nuget\\packages\\": {},
+    "C:\\Users\\Dasha\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ConsoleApp17\\ConsoleApp17\\ConsoleApp17.csproj",
+      "projectUniqueName": "D:\\itea\\classwork\\l2\\ConsoleApp1\\ConsoleApp17\\ConsoleApp17.csproj",
       "projectName": "ConsoleApp17",
-      "projectPath": "F:\\ConsoleApp17\\ConsoleApp17\\ConsoleApp17.csproj",
-      "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
-      "outputPath": "F:\\ConsoleApp17\\ConsoleApp17\\obj\\",
+      "projectPath": "D:\\itea\\classwork\\l2\\ConsoleApp1\\ConsoleApp17\\ConsoleApp17.csproj",
+      "packagesPath": "C:\\Users\\Dasha\\.nuget\\packages\\",
+      "outputPath": "D:\\itea\\classwork\\l2\\ConsoleApp1\\ConsoleApp17\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\LamberJack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

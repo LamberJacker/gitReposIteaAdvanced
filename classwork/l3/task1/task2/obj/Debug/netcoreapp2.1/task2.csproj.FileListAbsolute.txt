@@ -1,0 +1,10 @@
+D:\itea\classwork\l3\task1\task2\bin\Debug\netcoreapp2.1\task2.deps.json
+D:\itea\classwork\l3\task1\task2\bin\Debug\netcoreapp2.1\task2.runtimeconfig.json
+D:\itea\classwork\l3\task1\task2\bin\Debug\netcoreapp2.1\task2.runtimeconfig.dev.json
+D:\itea\classwork\l3\task1\task2\bin\Debug\netcoreapp2.1\task2.dll
+D:\itea\classwork\l3\task1\task2\bin\Debug\netcoreapp2.1\task2.pdb
+D:\itea\classwork\l3\task1\task2\obj\Debug\netcoreapp2.1\task2.csproj.CoreCompileInputs.cache
+D:\itea\classwork\l3\task1\task2\obj\Debug\netcoreapp2.1\task2.AssemblyInfoInputs.cache
+D:\itea\classwork\l3\task1\task2\obj\Debug\netcoreapp2.1\task2.AssemblyInfo.cs
+D:\itea\classwork\l3\task1\task2\obj\Debug\netcoreapp2.1\task2.dll
+D:\itea\classwork\l3\task1\task2\obj\Debug\netcoreapp2.1\task2.pdb

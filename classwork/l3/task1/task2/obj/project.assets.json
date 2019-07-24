@@ -688,7 +688,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dasha\\.nuget\\packages\\": {},
+    "C:\\Users\\LamberJack\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -697,14 +697,14 @@
       "projectUniqueName": "D:\\itea\\classwork\\l3\\task1\\task2\\task2.csproj",
       "projectName": "task2",
       "projectPath": "D:\\itea\\classwork\\l3\\task1\\task2\\task2.csproj",
-      "packagesPath": "C:\\Users\\Dasha\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
       "outputPath": "D:\\itea\\classwork\\l3\\task1\\task2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LamberJack\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -92,45 +92,64 @@ namespace task2
             throw new NotImplementedException();
         }
 
-        public bool Remove(T item)// not done
+        public bool Remove(T item)// not done 
         {
-            throw new NotImplementedException();
+            position--;
+            bool flag = false;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (item.GetType().Name == arr[i].GetType().Name)
+                {
+                    flag = true;
+                    for (int j = i; j < arr.Length - i - 1; j++)
+                    {
+                        arr[j] = arr[j + 1];
+                    }
+                    return flag;
+                }
+            }
+            return flag;
         }
 
-        public IEnumerator<T> GetEnumerator()
+        public IEnumerator<T> GetEnumerator() // well done 
         {
             return this as IEnumerator<T>;
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator() // well done  
         {
             return this as IEnumerator;
         }
         
-        public void Insert(int index, T item)
+        public void Insert(int index, T item) // not now 
         {
             throw new NotImplementedException();
         }
-        T IEnumerator<T>.Current
+        T IEnumerator<T>.Current // well done 
         {
             get
             {
                 return (T)arr[positionMV];
             }
         }
-        object IEnumerator.Current
+        object IEnumerator.Current // well done 
         {
             get { return arr[positionMV]; }
         }
 
-        public void RemoveAt(int index) // 50 - 50 
+        public void RemoveAt(int index) // well done 
         {
-            arr[index] = null;
-            for (int i = 0; i < arr.Length - 1 - index; i++)
+            if (index > position)
             {
-                Animal temp = null;
-                arr[index] = temp;
-                arr[index] = arr[index + 1];
+                Console.WriteLine("Nothing to delete!");
+            }
+            else
+            {
+                position--;
+                for (int i = index; i < arr.Length - 1 - index; i++)
+                {
+                    arr[i] = arr[i + 1];
+                }
             }
         }
 
@@ -156,7 +175,7 @@ namespace task2
         {
             this.Reset();
         }
-        public void FindType(string type)
+        public void FindType(string type) // well done 
         {
             for (int i = 0; i < position - 1; i++)
             {
@@ -164,7 +183,7 @@ namespace task2
                     Console.WriteLine("index of " + type + " is " + i);  
             }
         }
-        public void FindName(string name)
+        public void FindName(string name) // well done 
         {
             for (int i = 0; i < position - 1; i++)
             {

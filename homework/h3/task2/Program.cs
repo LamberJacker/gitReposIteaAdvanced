@@ -11,19 +11,19 @@ namespace task2
             MyCollection <Animal> animalCollection = new MyCollection <Animal> ();
 
             // initialize collection:
-            Dog an1 = new Dog("Marta", "Alabai");
-            Cat an2 = new Cat("Toma", "Pers");
-            Dog an3 = new Dog("Maria", "Chau-Chau");
-            Cat an4 = new Cat("Murzik", "Dvornaga");
-            Dog an5 = new Dog("Sobol", "Ovcharka");
-            Dog an6 = new Dog("Misha", "Foxterier");
+            Dog an0 = new Dog("Marta", "Alabai");
+            Cat an1 = new Cat("Toma", "Pers");
+            Dog an2 = new Dog("Maria", "Chau-Chau");
+            Cat an3 = new Cat("Murzik", "Dvornaga");
+            Dog an4 = new Dog("Sobol", "Ovcharka");
+            Dog an5 = new Dog("Misha", "Foxterier");
 
+            animalCollection.Add(an0);
             animalCollection.Add(an1);
             animalCollection.Add(an2);
             animalCollection.Add(an3);
             animalCollection.Add(an4);
             animalCollection.Add(an5);
-            animalCollection.Add(an6);
 
             // Show collection:
             Console.WriteLine("Our collection of animals : ");
@@ -50,6 +50,25 @@ namespace task2
             Console.WriteLine(new string('-', 20));
             animalCollection.FindType("Pers");
             animalCollection.FindType("Dvornaga");
+            
+            //Show RemoveAt:
+            Console.WriteLine(new string('-', 20));
+            animalCollection.RemoveAt(100);
+            Console.WriteLine(new string('-', 20));
+            Console.WriteLine("Our collection of animals : ");
+            foreach (Animal an in animalCollection)
+            {
+                Console.WriteLine(an.ToString());
+            }
+            
+            //Show Remove:
+            Console.WriteLine(new string('-', 20));
+            //animalCollection.Remove(an2);
+            Console.WriteLine("Our collection of animals : ");
+            foreach (Animal an in animalCollection)
+            {
+                Console.WriteLine(an.ToString());
+            }
 
             //StopedProg
             Console.ReadKey();

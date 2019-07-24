@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\itea\\homework\\h2\\h2\\h2.csproj",
-      "projectName": "h2",
-      "projectPath": "D:\\itea\\homework\\h2\\h2\\h2.csproj",
+      "projectUniqueName": "D:\\itea\\homework\\h3\\task2\\task2.csproj",
+      "projectName": "task2",
+      "projectPath": "D:\\itea\\homework\\h3\\task2\\task2.csproj",
       "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
-      "outputPath": "D:\\itea\\homework\\h2\\h2\\obj\\",
+      "outputPath": "D:\\itea\\homework\\h3\\task2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

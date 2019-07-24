@@ -694,9 +694,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\itea\\homework\\h3\\h3\\h3.csproj",
-      "projectName": "h3",
-      "projectPath": "D:\\itea\\homework\\h3\\h3\\h3.csproj",
+      "projectUniqueName": "D:\\itea\\homework\\h3\\h3\\task1.csproj",
+      "projectName": "task1",
+      "projectPath": "D:\\itea\\homework\\h3\\h3\\task1.csproj",
       "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
       "outputPath": "D:\\itea\\homework\\h3\\h3\\obj\\",
       "projectStyle": "PackageReference",

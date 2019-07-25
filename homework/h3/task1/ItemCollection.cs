@@ -60,6 +60,7 @@ namespace task1
 
         public void Add(T item) // well done 
         {
+            countOfItem++;
             if (countOfItem == capacityArrItems)
             {
                 Item[] tempArr = new Item[capacityArrItems * 2];
@@ -67,7 +68,6 @@ namespace task1
                 itemCollect = tempArr;
                 capacityArrItems *= 2;
             }
-            countOfItem++;
             itemCollect[countOfItem] = item;
         }
 
@@ -88,11 +88,11 @@ namespace task1
             throw new NotImplementedException();
         }
 
-        public IEnumerator<T> GetEnumerator()
+        public IEnumerator<T> GetEnumerator() // well done 
         {
             return this as IEnumerator<T>;
         }
-        IEnumerator IEnumerable.GetEnumerator()
+        IEnumerator IEnumerable.GetEnumerator() // well done 
         {
             return this as IEnumerator;
         }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace task1
 {
-    abstract class Hero
+    abstract class Hero : ItemCollection<T>
     {
         protected string name;
         protected int agility;
@@ -13,7 +13,7 @@ namespace task1
         protected int strength;
         protected int strikePwr;
         public abstract ArrayList getUltimate();
-        protected Item item = new Item();
+        
         public Hero()
         {
             AddItem();
@@ -42,18 +42,18 @@ namespace task1
             switch (rndItem)
             {
                 case 1:
-                    Item phaseBoots = new PhaseBoots();
-                    item = phaseBoots;
-                    agility += phaseBoots.agility;
-                    intelligence += phaseBoots.intelligence;
-                    strength += phaseBoots.strength;
+                    //Item phaseBoots = new PhaseBoots();
+                    //item = phaseBoots;
+                    //agility += phaseBoots.agility;
+                    //intelligence += phaseBoots.intelligence;
+                    //strength += phaseBoots.strength;
                     break;
                 case 2:
-                    Item mantaStyle = new MantaStyle();
-                    item = mantaStyle;
-                    agility += mantaStyle.agility;
-                    intelligence += mantaStyle.intelligence;
-                    strength += mantaStyle.strength;
+                    //Item mantaStyle = new MantaStyle();
+                    //item = mantaStyle;
+                    //agility += mantaStyle.agility;
+                    //intelligence += mantaStyle.intelligence;
+                    //strength += mantaStyle.strength;
                     break;
             }
         }

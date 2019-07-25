@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Text;
 
-namespace h2
+namespace task1
 {
     class Item
     {

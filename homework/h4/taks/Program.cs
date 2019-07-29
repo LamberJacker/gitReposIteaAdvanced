@@ -14,7 +14,7 @@ namespace taks
 
             CollectionHero cloneColHeroes = (CollectionHero)colHer.Clone(); // clone collection
 
-            Console.WriteLine(new string('-', 20) + " Show Collection of HEROES " + new string('-', 20)); // for view in console
+            Console.WriteLine(new string('-', 20) + " Show Clone Collection of HEROES " + new string('-', 20)); // for view in console
 
             Console.WriteLine(cloneColHeroes.ToString()); // clone collection
 

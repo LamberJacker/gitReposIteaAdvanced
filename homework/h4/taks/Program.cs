@@ -6,17 +6,9 @@ namespace taks
     {
         static void Main(string[] args)
         {
+            CollectionHero newColHeroes = new CollectionHero();
 
-            Hero trynd = new Tryndamere();
-            Hero kayle = new Kayle();
-            Hero br = new Brand();
-            Hero zed = new Zed();
-            Hero yas = new Yasuo();
-            Hero ori = new Oriana();
-            Hero nas = new Nasus();
-
-
-            Console.WriteLine(trynd.ToString());
+            Console.WriteLine(newColHeroes.ToString());
 
             Console.ReadKey(); //stop prog
         }

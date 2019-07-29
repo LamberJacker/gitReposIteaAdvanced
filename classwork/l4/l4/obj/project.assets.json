@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dasha\\.nuget\\packages\\": {},
+    "C:\\Users\\LamberJack\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dasha\\source\\repos\\l4\\l4\\task1.csproj",
+      "projectUniqueName": "D:\\itea\\classwork\\l4\\l4\\task1.csproj",
       "projectName": "task1",
-      "projectPath": "C:\\Users\\Dasha\\source\\repos\\l4\\l4\\task1.csproj",
-      "packagesPath": "C:\\Users\\Dasha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dasha\\source\\repos\\l4\\l4\\obj\\",
+      "projectPath": "D:\\itea\\classwork\\l4\\l4\\task1.csproj",
+      "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
+      "outputPath": "D:\\itea\\classwork\\l4\\l4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LamberJack\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\itea\\classwork\\l4\\l4\\task1.csproj": {}
+    "D:\\itea\\homework\\h4\\taks\\taks.csproj": {}
   },
   "projects": {
-    "D:\\itea\\classwork\\l4\\l4\\task1.csproj": {
+    "D:\\itea\\homework\\h4\\taks\\taks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\itea\\classwork\\l4\\l4\\task1.csproj",
-        "projectName": "task1",
-        "projectPath": "D:\\itea\\classwork\\l4\\l4\\task1.csproj",
+        "projectUniqueName": "D:\\itea\\homework\\h4\\taks\\taks.csproj",
+        "projectName": "taks",
+        "projectPath": "D:\\itea\\homework\\h4\\taks\\taks.csproj",
         "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
-        "outputPath": "D:\\itea\\classwork\\l4\\l4\\obj\\",
+        "outputPath": "D:\\itea\\homework\\h4\\taks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

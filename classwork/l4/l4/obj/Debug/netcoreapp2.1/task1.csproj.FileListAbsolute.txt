@@ -1,0 +1,10 @@
+C:\Users\Dasha\source\repos\l4\l4\bin\Debug\netcoreapp2.1\task1.deps.json
+C:\Users\Dasha\source\repos\l4\l4\bin\Debug\netcoreapp2.1\task1.runtimeconfig.json
+C:\Users\Dasha\source\repos\l4\l4\bin\Debug\netcoreapp2.1\task1.runtimeconfig.dev.json
+C:\Users\Dasha\source\repos\l4\l4\bin\Debug\netcoreapp2.1\task1.dll
+C:\Users\Dasha\source\repos\l4\l4\bin\Debug\netcoreapp2.1\task1.pdb
+C:\Users\Dasha\source\repos\l4\l4\obj\Debug\netcoreapp2.1\task1.csproj.CoreCompileInputs.cache
+C:\Users\Dasha\source\repos\l4\l4\obj\Debug\netcoreapp2.1\task1.AssemblyInfoInputs.cache
+C:\Users\Dasha\source\repos\l4\l4\obj\Debug\netcoreapp2.1\task1.AssemblyInfo.cs
+C:\Users\Dasha\source\repos\l4\l4\obj\Debug\netcoreapp2.1\task1.dll
+C:\Users\Dasha\source\repos\l4\l4\obj\Debug\netcoreapp2.1\task1.pdb

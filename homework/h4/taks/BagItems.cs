@@ -12,7 +12,7 @@ namespace taks
         public BagItems() // default constr for list of 6 random items 
         {
             Random rnd = new Random();
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 6; i++)
             {
                 int rndValue = rnd.Next(0,8);
                 switch (rndValue)
@@ -62,6 +62,7 @@ namespace taks
             if (possition < 0 && possition > bag.Count - 1)
                 return false;
             else
+                possition++;
                 return true;
         } 
 

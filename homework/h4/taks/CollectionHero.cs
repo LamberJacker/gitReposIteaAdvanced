@@ -58,17 +58,20 @@ namespace taks
             }
             return result;
         }
-
         public object Clone() // method for Clone 
         {
-            Console.WriteLine(new string ('-' , 20) + "CLONE HEROES" + new string('-', 20)); // for view in console
-            Dictionary<Hero, List<Item>> cloneColHeroes = new Dictionary<Hero, List<Item>>(); // new clone of dictionary of heroes 
-            cloneColHeroes = colHero; // copy link
-            foreach (KeyValuePair<Hero, List<Item>> f1 in colHero) // initialize value of field "checkClone" in class Hero   
+            Dictionary<Hero, List<Item>> clonDic= new Dictionary<Hero, List<Item>> ();   
+            foreach (KeyValuePair<Hero, List<Item>> f in colHero) 
             {
-                f1.Key.checkClone = "It`s CLONE";
+                List<Item> cloneList = new List<Item>();
+                foreach (Item f2 in f.Value)
+                {
+                    cloneList.Add(new Item(f2.Name, f2.Intelligence, f2.Agility, f2.Strength));
+                }
+                clonDic.Add(new Hero(f.Key.Name, f.Key.Intelligence, f.Key.Agility, f.Key.Strength, "CLONE"), cloneList);
             }
-            return new CollectionHero(cloneColHeroes);
+            CollectionHero clonCollection = new CollectionHero(clonDic);
+            return clonCollection;
         }
     }
 }

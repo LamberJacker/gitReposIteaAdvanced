@@ -11,13 +11,14 @@ namespace taks
         protected int _intelligence;
         protected int _agility;
         protected int _strength;
+        public string checkClone; // field for clone collection. This field value is "CLONE" if object clone.
         string Name { get { return _name; } } // get prop for name
         int Intelligence { get { return _intelligence; } } // get prop for int.
         int Agility { get { return _agility; } } // get prop for ag.
         int Strength { get { return _strength; } } // get prop for str.
         public override string ToString() // info about fields
         {
-            return "Hero - " + Name + ": Int.= " + Intelligence + "; Ag.= " + Agility + "; Str.= " + Strength;
+            return "Hero - " + Name + ": Int.= " + Intelligence + "; Ag.= " + Agility + "; Str.= " + Strength + " " + checkClone;
         }       
     }
     class Tryndamere : Hero

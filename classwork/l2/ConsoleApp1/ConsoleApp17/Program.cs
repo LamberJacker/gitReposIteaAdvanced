@@ -8,7 +8,7 @@ namespace ConsoleApp17
         class Dog :ICloneable
         {
             String name = "Susleg";
-          public  int age=5;
+            public  int age=5;
             public Dog() { }
             Dog(String name,int age)
             {
@@ -38,7 +38,7 @@ namespace ConsoleApp17
             }
             public override String ToString()
             {
-                return name;
+                return name + age;
             }
 
             public object Clone()
@@ -64,9 +64,13 @@ namespace ConsoleApp17
             Dog dog2 = new Dog();
             Dog dog3 = null;
             Cat cat = new Cat();
-            Console.WriteLine(dog1.Equals(cat));
+            //Console.WriteLine(dog1.Equals(cat));
+
+            Console.WriteLine(dog1);
+
 
             Dog cloneDog = (Dog)dog1.Clone();
+            cloneDog.age = 40;
             Console.WriteLine(cloneDog);
 
 

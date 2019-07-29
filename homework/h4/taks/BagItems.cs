@@ -57,7 +57,7 @@ namespace taks
             return bag;
         }
 
-        public bool MoveNext()  // IEnumerator.MoveNext()
+        public bool MoveNext()  // IEnumerator.MoveNext() 
         {
             if (possition < 0 && possition > bag.Count - 1)
                 return false;
@@ -70,7 +70,7 @@ namespace taks
             possition = -1;
         }
 
-        public override string ToString()
+        public override string ToString() //show consists of bags 
         {
             string bagItem = "Bag Items:";
             for (int i = 0; i < 7; i++)

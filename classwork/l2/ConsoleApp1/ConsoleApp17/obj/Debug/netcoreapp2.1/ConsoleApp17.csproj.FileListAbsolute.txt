@@ -20,3 +20,14 @@ F:\ConsoleApp17\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.AssemblyInfoIn
 F:\ConsoleApp17\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.AssemblyInfo.cs
 F:\ConsoleApp17\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.dll
 F:\ConsoleApp17\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.pdb
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\bin\Debug\netcoreapp2.1\ConsoleApp17.deps.json
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\bin\Debug\netcoreapp2.1\ConsoleApp17.runtimeconfig.json
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\bin\Debug\netcoreapp2.1\ConsoleApp17.runtimeconfig.dev.json
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\bin\Debug\netcoreapp2.1\ConsoleApp17.dll
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\bin\Debug\netcoreapp2.1\ConsoleApp17.pdb
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.csprojAssemblyReference.cache
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.csproj.CoreCompileInputs.cache
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.AssemblyInfoInputs.cache
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.AssemblyInfo.cs
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.dll
+D:\itea\classwork\l2\ConsoleApp1\ConsoleApp17\obj\Debug\netcoreapp2.1\ConsoleApp17.pdb

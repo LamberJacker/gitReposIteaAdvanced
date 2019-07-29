@@ -40,7 +40,11 @@ namespace taks
                 }
             }
         }
-        public override string ToString() // Show our dic pf Heroes and Items 
+        public CollectionHero(Dictionary<Hero, List<Item>> cloneColHero) // constr for method Clone() 
+        {
+            colHero = cloneColHero;
+        }
+        public override string ToString() // Show our dictionary of Heroes and Items 
         {
             string result = "";
             foreach (KeyValuePair<Hero, List<Item>> f1 in colHero)
@@ -55,11 +59,16 @@ namespace taks
             return result;
         }
 
-        public object Clone()
+        public object Clone() // method for Clone 
         {
-            CollectionHero newColHeroes = new CollectionHero();
-            newColHeroes = colHero;
-            return newColHeroes;
+            Console.WriteLine(new string ('-' , 20) + "CLONE HEROES" + new string('-', 20)); // for view in console
+            Dictionary<Hero, List<Item>> cloneColHeroes = new Dictionary<Hero, List<Item>>(); // new clone of dictionary of heroes 
+            cloneColHeroes = colHero; // copy link
+            foreach (KeyValuePair<Hero, List<Item>> f1 in colHero) // initialize value of field "checkClone" in class Hero   
+            {
+                f1.Key.checkClone = "It`s CLONE";
+            }
+            return new CollectionHero(cloneColHeroes);
         }
     }
 }

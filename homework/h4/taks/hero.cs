@@ -12,7 +12,8 @@ namespace taks
         protected int _agility;
         protected int _strength;
         protected string _checkClone; // field for clone collection. This field value is "CLONE" if object clone.
-        public Hero() // default constr
+
+        public Hero() // default constr 
         {
 
         }
@@ -24,12 +25,42 @@ namespace taks
             _strength = strength;
             _checkClone = checkClone;
         }
-        public string Name { get { return _name; } } // get prop for name
-        public int Intelligence { get { return _intelligence; } } // get prop for int.
-        public int Agility { get { return _agility; } } // get prop for ag.
-        public int Strength { get { return _strength; } } // get prop for str.
-        public string CheckClone { get { return _checkClone; } } // get prop for str.
-        public override string ToString() // info about fields
+        public string Name 
+        {
+            get
+            {
+                return _name;
+            }
+        } // get prop for name
+        public int Intelligence 
+        {
+            get
+            {
+                return _intelligence;
+            }
+        } // get prop for int.
+        public int Agility 
+        {
+            get
+            {
+                return _agility;
+            }
+        } // get prop for ag.
+        public int Strength 
+        {
+            get
+            {
+                return _strength;
+            }
+        } // get prop for str.
+        public string CheckClone 
+        {
+            get
+            {
+                return _checkClone;
+            }
+        } // get prop for str.
+        public override string ToString() // info about fields 
         {
             return "Hero - " + Name + ": Int.= " + Intelligence + "; Ag.= " + Agility + "; Str.= " + Strength + " " + CheckClone;
         }       

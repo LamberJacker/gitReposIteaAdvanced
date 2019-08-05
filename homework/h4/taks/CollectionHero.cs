@@ -7,7 +7,6 @@ namespace taks
     class CollectionHero : ICloneable
     {
         Dictionary<Hero, List<Item>> colHero = new Dictionary<Hero, List<Item>>();
-
         public CollectionHero() // default constr for dictionary of 5 random heroes and bags of items 
         {
             Random rnd = new Random();

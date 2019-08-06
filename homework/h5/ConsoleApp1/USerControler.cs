@@ -1,7 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Data.Common;
 
 
@@ -174,6 +173,43 @@ namespace ConsoleApp1
             }
             connect.Close();
             return orderCol;
+        }
+        public List<UserWithOrder> GetUserWithOrders(int id) 
+        {
+            MySqlConnection connect = DBWorker.getMySqlConnection();
+            connect.Open();
+
+            string query = "SELECT users.name, orders.name, orders.model FROM users JOIN orders ON users.id = orders.users_id" +
+                "WHERE users.id = " + id;
+
+            MySqlCommand command = new MySqlCommand(query, connect);
+
+            List<UserWithOrder> usWithOr = new List<UserWithOrder>();
+            using (DbDataReader reader = command.ExecuteReader())
+            {
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int nameO = reader.GetOrdinal("name");
+                        int nameOrderO = reader.GetOrdinal("name");
+                        int modelOrderO = reader.GetOrdinal("model");
+
+                        string name = reader.GetString(nameO);
+                        string nameOrder = reader.GetString(nameOrderO);
+                        int model = Convert.ToInt32(reader.GetValue(modelOrderO));
+
+                        UserWithOrder userAndOrders = new UserWithOrder(); // temp user
+                        userAndOrders.name = name;
+                        userAndOrders.nameOrder = nameOrder;
+                        userAndOrders.model = model;
+
+                        usWithOr.Add(userAndOrders);
+                    }
+                }
+            }
+            connect.Close();
+            return usWithOr;
         }
     }
 }

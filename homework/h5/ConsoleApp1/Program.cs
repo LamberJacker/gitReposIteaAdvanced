@@ -61,6 +61,13 @@ namespace ConsoleApp1
                 Console.WriteLine(order.ToString());
             }
 
+            //Show list of user + orders on ID
+            List<UserWithOrder> list5 = dbCommand.GetUserWithOrders(1);
+            Console.WriteLine("\n" + new String('-', 40) + "Show list of all users" + new String('-', 40));
+            foreach (UserWithOrder order in list5)
+            {
+                Console.WriteLine(order.ToString());
+            }
 
 
         }

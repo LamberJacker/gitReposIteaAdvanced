@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\itea\\classwork\\l5\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "D:\\itea\\homework\\h6\\h6\\h6.csproj": {}
   },
   "projects": {
-    "D:\\itea\\classwork\\l5\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "D:\\itea\\homework\\h6\\h6\\h6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\itea\\classwork\\l5\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "D:\\itea\\classwork\\l5\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "D:\\itea\\homework\\h6\\h6\\h6.csproj",
+        "projectName": "h6",
+        "projectPath": "D:\\itea\\homework\\h6\\h6\\h6.csproj",
         "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
-        "outputPath": "D:\\itea\\classwork\\l5\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "D:\\itea\\homework\\h6\\h6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -131,6 +131,7 @@ namespace ConsoleApp2
             sem.WaitOne();
             strprod.MethodProducer(letter);
             sem.Release();
+            sem.Close()
         }
     }
 }

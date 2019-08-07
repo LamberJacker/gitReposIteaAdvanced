@@ -109,6 +109,7 @@ namespace ConsoleApp1
             MySqlConnection connect = DBWorker.getMySqlConnection();
             connect.Open();
 
+
             string query = "INSERT INTO users (name, login, password, address, age) VALUES (@name, @login, @password," +
                 "@address, @age)";
 

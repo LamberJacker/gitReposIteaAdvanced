@@ -13,6 +13,7 @@ namespace h6
             new Buyer("#3", cashbox);
             new Buyer("#4", cashbox);
             new Buyer("#5", cashbox);
+            Console.WriteLine("main finish ");
         }
     }
 }

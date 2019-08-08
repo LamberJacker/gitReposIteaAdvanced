@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading;
 
 namespace task2
 {
@@ -6,7 +9,10 @@ namespace task2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Worker> woreksList = new List<Worker>();
+            GoldMine gmine = new GoldMine();
+            Stronghold home = new Stronghold(woreksList, gmine);
+
         }
     }
 }

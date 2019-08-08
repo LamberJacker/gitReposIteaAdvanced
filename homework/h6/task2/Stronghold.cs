@@ -16,7 +16,7 @@ namespace task2
             this.mine = mine;
             for (int i = 0; i < 3; i++)
             {
-                listWorkers.Add(new Worker(3, mine));
+                listWorkers.Add(new Worker(listWorkers.Count+1,3, mine));
             }
             new Thread(AddNewWorker).Start();
         }
@@ -26,7 +26,7 @@ namespace task2
             {
                 Thread.Sleep(10000);
                 Console.Clear();
-                listWorkers.Add(new Worker(3, mine));
+                listWorkers.Add(new Worker(listWorkers.Count + 1, 3, mine));
                 Console.WriteLine(ToString());
             }
         }

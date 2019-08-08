@@ -8,11 +8,11 @@ namespace h6
         static void Main(string[] args)
         {
             Cashbox cashbox = new Cashbox();
-            Buyer bayer1 = new Buyer("#1", cashbox);
-            Buyer bayer2 = new Buyer("#2", cashbox);
-            Buyer bayer3 = new Buyer("#3", cashbox);
-            Buyer bayer4 = new Buyer("#4", cashbox);
-            Buyer bayer5 = new Buyer("#5", cashbox);
+            new Buyer("#1", cashbox);
+            new Buyer("#2", cashbox);
+            new Buyer("#3", cashbox);
+            new Buyer("#4", cashbox);
+            new Buyer("#5", cashbox);
         }
     }
 }

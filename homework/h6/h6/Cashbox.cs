@@ -9,15 +9,15 @@ namespace h6
     {
         bool flag = true;
         Random rnd = new Random();
-        public void ToServe()
+        public void ToServe() 
         {
-            if (rnd.Next(0, 100) < 30)
-            { 
+            if (rnd.Next(0, 10) < 3)
+            {
                 flag = false;
-                Console.WriteLine("Sorry, cashbox is closed");
+                Console.WriteLine("Cashbox is closed");
             }
         }
-        public Boolean IsOpen()
+        public bool IsOpen()
         {
             return flag;
         }

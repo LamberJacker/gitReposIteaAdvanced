@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 
 namespace h6
@@ -10,26 +8,22 @@ namespace h6
         string name;
         Cashbox cashbox;
         Thread thread;
-        public Buyer(string name, Cashbox cashbox) 
+        public Buyer(string name, Cashbox cashbox)
         {
             this.name = name;
             this.cashbox = cashbox;
             thread = new Thread(Buy);
             thread.Start();
         }
-        public void Buy()
+        private void Buy()
         {
-            if (!cashbox.IsOpen()) thread.Abort();
-            else
+            lock (cashbox)
             {
-                while (cashbox.IsOpen())
+                if (cashbox.IsOpen())
                 {
-                    lock (cashbox)
-                    {
-                        Console.WriteLine("Buyer " + name + " now buys!");
-                        cashbox.ToServe();
-                        Thread.Sleep(3000);
-                    }
+                    Console.WriteLine("Buyer " + name + " now buys!");
+                    Thread.Sleep(3000);
+                    cashbox.ToServe();
                 }
             }
         }

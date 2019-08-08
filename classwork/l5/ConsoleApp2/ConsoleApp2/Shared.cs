@@ -11,7 +11,10 @@ namespace ConsoleApp2
         {
             lock (this)
             {
-                if (flag) { Monitor.Wait(this); }
+                if (flag)
+                {
+                    Monitor.Wait(this);
+                }
                 x++;
                 Console.WriteLine("X = " + x + " - put shared");
                 flag = true;

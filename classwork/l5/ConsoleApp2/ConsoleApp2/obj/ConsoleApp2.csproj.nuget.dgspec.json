@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\itea\\classwork\\l5\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
         "projectName": "ConsoleApp2",
         "projectPath": "D:\\itea\\classwork\\l5\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
-        "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Dasha\\.nuget\\packages\\",
         "outputPath": "D:\\itea\\classwork\\l5\\ConsoleApp2\\ConsoleApp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\LamberJack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

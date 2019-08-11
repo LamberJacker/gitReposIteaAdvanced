@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\itea\\homework\\h3\\task2\\task2.csproj",
         "projectName": "task2",
         "projectPath": "D:\\itea\\homework\\h3\\task2\\task2.csproj",
-        "packagesPath": "C:\\Users\\LamberJack\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Dasha\\.nuget\\packages\\",
         "outputPath": "D:\\itea\\homework\\h3\\task2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\LamberJack\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dasha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

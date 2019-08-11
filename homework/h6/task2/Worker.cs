@@ -22,13 +22,10 @@ namespace task2
         {
             while (!mine.MineIsEmpty())
             {
-                lock (mine)
-                {
                     Thread.Sleep(1000);
                     mine.gold -= productivity;
                     doneWork += productivity;
                     Console.WriteLine(ToString());
-                }
             }
         }
         public override string ToString() 

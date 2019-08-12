@@ -59,15 +59,30 @@ namespace lasthomework
             }
             else return false;
         }
-        public Boolean EditUser(string login, string password, string name, string address, string age, string sex)
+        public Boolean EditUser(string login, string password, string name, string address, string age)
         {
-            Boolean intage = Int32.TryParse(age, out int resultage);
-            if (!intage) return false;
-            if (name != null || login != null || password != null || address != null || resultage > 0 || sex.Equals("male") || sex.Equals("female"))
+            if (!age.Equals(""))
             {
+                Boolean intage = Int32.TryParse(age, out int resultage);
+                if (!intage || resultage > 0 || resultage < 110) return false;
+                else
+                {
+                    MySqlConnection connect = DBWorker.getMySqlConnection();
+                    connect.Open();
+                    string query = "UPDATE users SET age = @age WHERE login = @login";
+                    MySqlCommand command = new MySqlCommand(query, connect);
+                    command.Parameters.Add(new MySqlParameter("@age", age));
+                    command.Parameters.Add(new MySqlParameter("@login", login));
+                    command.ExecuteNonQuery();
+                    command.Dispose();
+                }
+            }
+
+            if (name.Equals("") || login.Equals("")  || password.Equals("") || address.Equals(""))
+            { 
                 MySqlConnection connect = DBWorker.getMySqlConnection();
                 connect.Open();
-                if (name != null && !name.Equals(""))
+                if (!name.Equals(""))
                 {
                     string query = "UPDATE users SET name = @name WHERE login = @login";
                     MySqlCommand command = new MySqlCommand(query, connect);
@@ -76,7 +91,7 @@ namespace lasthomework
                     command.ExecuteNonQuery();
                     command.Dispose();
                 }
-                if (password != null && !password.Equals(""))
+                if (!password.Equals(""))
                 {
                     string query = "UPDATE users SET password = @password WHERE login = @login";
                     MySqlCommand command = new MySqlCommand(query, connect);
@@ -85,29 +100,11 @@ namespace lasthomework
                     command.ExecuteNonQuery();
                     command.Dispose();
                 }
-                if (address != null && !address.Equals(""))
+                if (!address.Equals(""))
                 {
                     string query = "UPDATE users SET address = @address WHERE login = @login";
                     MySqlCommand command = new MySqlCommand(query, connect);
                     command.Parameters.Add(new MySqlParameter("@address", address));
-                    command.Parameters.Add(new MySqlParameter("@login", login));
-                    command.ExecuteNonQuery();
-                    command.Dispose();
-                }
-                if (resultage > 0 & resultage < 110)
-                {
-                    string query = "UPDATE users SET age = @age WHERE login = @login";
-                    MySqlCommand command = new MySqlCommand(query, connect);
-                    command.Parameters.Add(new MySqlParameter("@age", age));
-                    command.Parameters.Add(new MySqlParameter("@login", login));
-                    command.ExecuteNonQuery();
-                    command.Dispose();
-                }
-                if (sex != null)
-                {
-                    string query = "UPDATE users SET sex = @sex WHERE login = @login";
-                    MySqlCommand command = new MySqlCommand(query, connect);
-                    command.Parameters.Add(new MySqlParameter("@sex", sex));
                     command.Parameters.Add(new MySqlParameter("@login", login));
                     command.ExecuteNonQuery();
                     command.Dispose();

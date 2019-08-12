@@ -9,7 +9,7 @@
         string password = Request.Form["password"];
         UserControler uc = new UserControler();
         bool checklog = uc.Login(login, password);
-        string showlogin = checklog ? "Sucsess" : "Fail";
+        string showlogin = checklog ? "SUCCESS LOG" : "FAIL LOG";
         <h2>@showlogin</h2>
     }
 }

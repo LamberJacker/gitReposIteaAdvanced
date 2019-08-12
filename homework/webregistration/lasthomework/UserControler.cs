@@ -31,16 +31,16 @@ namespace lasthomework
                 return false;
             }
         }
-        public Boolean AddUser(string login, string password, string name, string repassword, string address, string age, int sex)
+        public Boolean AddUser(string login, string password, string repassword, string name, string address, string age, string sex)
         {
             bool intage = Int32.TryParse(age, out int resultage);
             if (!intage) return false;
 
-            if (name != null & login != null & password.Equals(repassword) & password != null & address != null & resultage > 0 & sex == 0 || sex == 1)
+            if (name != null & login != null & password != null & password.Equals(repassword) & address != null & resultage > 0 & sex != null)
             {
                 MySqlConnection connect = DBWorker.getMySqlConnection();
                 connect.Open();
-                //password += "14qa15sd16df";
+                //password += "+14qa15sd16df";
                 String query = "INSERT INTO users (login, password, name, address, age, sex) VALUES (@login, @password, @name," +
                     "@address, @age, @sex)";
                 MySqlCommand command = new MySqlCommand(query, connect);
@@ -59,11 +59,11 @@ namespace lasthomework
             }
             else return false;
         }
-        public Boolean EditUser(string login, string password, string name, string address, string age, int sex)
+        public Boolean EditUser(string login, string password, string name, string address, string age, string sex)
         {
             Boolean intage = Int32.TryParse(age, out int resultage);
             if (!intage) return false;
-            if (name != null || login != null || password != null || address != null || resultage > 0 || sex == 0 || sex == 1)
+            if (name != null || login != null || password != null || address != null || resultage > 0 || sex.Equals("male") || sex.Equals("female"))
             {
                 MySqlConnection connect = DBWorker.getMySqlConnection();
                 connect.Open();
@@ -103,7 +103,7 @@ namespace lasthomework
                     command.ExecuteNonQuery();
                     command.Dispose();
                 }
-                if (sex == 0 || sex == 1)
+                if (sex != null)
                 {
                     string query = "UPDATE users SET sex = @sex WHERE login = @login";
                     MySqlCommand command = new MySqlCommand(query, connect);

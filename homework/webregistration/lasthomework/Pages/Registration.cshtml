@@ -10,12 +10,11 @@
         string repassword = Request.Form["repassword"];
         string name = Request.Form["name"];
         string address = Request.Form["address"];
-        string age = Request.Form["address"];
+        string age = Request.Form["age"];
         string sex = Request.Form["sex"];
-
         UserControler uc = new UserControler();
-        bool checklog = uc.Login(login, password);
-        string showlogin = checklog ? "Sucsess" : "Fail";
+        bool checklog = uc.AddUser(login, password, repassword, name, address, age, sex);
+        string showlogin = checklog ? "SUCCESS REG" : "FAIL REG";
         <h2>@showlogin</h2>
     }
 }
@@ -24,19 +23,21 @@
         <h1>REGISTRATION FORM</h1>
         <h3>Use this form to registration in DATABASE</h3>
     </div>
-    <form method="post" action="form.php">
+    <form method="post" action="">
         <div>
             <label for="login">Login (email)</label>
             <input type="email" name="login" required>
         </div>
         <div>
             <label for="password">Password</label>
-            <input type="text" name="password" required>
+            <input type="password" class ="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                   title="Должен содержать символы или буквы большого  и малого регистра, и иметь не менее 8 символов" required>
         </div>
         <div>
             <label for="repassword">RePassword</label>
-            <input type="text" name="repassword" required>
+            <input type="password" name="repassword"  required>
         </div>
+        
         <div>
             <label for="name">Name</label>
             <input type="text" name="name" required>
@@ -52,11 +53,11 @@
         <div class="radio">
             <p><b>Gender</b></p>
             <label>
-                <input type="radio" name="sex" value="1">Man
+                <input type="radio" name="sex" value="male">Man
                 <div class="radio-control male"></div>
             </label>
             <label>
-                <input type="radio" name="sex" value="0">Woman
+                <input type="radio" name="sex" value="female">Woman
                 <div class="radio-control female"></div>
             </label>
         </div>

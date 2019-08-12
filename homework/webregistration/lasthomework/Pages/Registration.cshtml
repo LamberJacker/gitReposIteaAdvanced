@@ -18,49 +18,47 @@
         <h2>@showlogin</h2>
     }
 }
-<div class="form-registration">
-    <div class="profile">
-        <h1>REGISTRATION FORM</h1>
-        <h3>Use this form to registration in DATABASE</h3>
-    </div>
-    <form method="post" action="">
-        <div>
-            <label for="login">Login (email)</label>
-            <input type="email" name="login" required>
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" class ="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                   title="Должен содержать символы или буквы большого  и малого регистра, и иметь не менее 8 символов" required>
-        </div>
-        <div>
-            <label for="repassword">RePassword</label>
-            <input type="password" name="repassword"  required>
-        </div>
-        
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" required>
-        </div>
-        <div>
-            <label for="address">Address</label>
-            <input type="text" name="address" required>
-        </div>
-        <div>
-            <label for="age">Age</label>
-            <input type="text" name="age" required>
-        </div>
-        <div class="radio">
-            <p><b>Gender</b></p>
-            <label>
-                <input type="radio" name="sex" value="male">Man
-                <div class="radio-control male"></div>
-            </label>
-            <label>
-                <input type="radio" name="sex" value="female">Woman
-                <div class="radio-control female"></div>
-            </label>
-        </div>
-        <button type="submit">OK</button>
-    </form>
+<div class="profile">
+    <h1>REGISTRATION FORM</h1>
+    <h3>Use this form to registration in DATABASE</h3>
 </div>
+<form method="post" action="">
+    <div>
+        <label for="login">Login (email)</label>
+        <input type="email" name="login" required>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" class ="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Должен содержать символы или буквы большого  и малого регистра, и иметь не менее 8 символов" required>
+    </div>
+    <div>
+        <label for="repassword">RePassword</label>
+        <input type="password" name="repassword"  required>
+    </div>
+        
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+    </div>
+    <div>
+        <label for="address">Address</label>
+        <input type="text" name="address" required>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="text" name="age" required>
+    </div>
+    <div class="radio">
+        <p><b>Gender</b></p>
+        <label>
+            <input type="radio" name="sex" value="male">Man
+            <div class="radio-control male"></div>
+        </label>
+        <label>
+            <input type="radio" name="sex" value="female">Woman
+            <div class="radio-control female"></div>
+        </label>
+    </div>
+    <button type="submit">OK</button>
+</form>

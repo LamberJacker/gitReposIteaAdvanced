@@ -13,36 +13,33 @@
         bool checklog = uc.EditUser(login, password, name, address, age);
         string showlogin = checklog ? "SUCCESS EDIT" : "FAIL EDIT";
         <h2>@showlogin</h2>
-        <p>@login</p><p>@password</p><p>@name</p><p>@address</p><p>@age</p>
     }
 }
-<div class="form-registration">
-    <div class="profile">
-        <h1>EDIT INFO ABOUT USER</h1>
-        <h2>EMAIL IS A KEY THEN YOU CAN`T CHANGE THIS FIELD</h2>
-    </div>
-    <form method="post" action="">
-        <div>
-            <label for="login">Login (email)</label>
-            <input type="email" name="login" required>
-        </div>
-        <div>
-            <label for="password">NEW Password</label>
-            <input type="password" class="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                   title="Должен содержать символы или буквы большого  и малого регистра, и иметь не менее 8 символов">
-        </div>
-        <div>
-            <label for="name">NEW Name</label>
-            <input type="text" name="name">
-        </div>
-        <div>
-            <label for="address">NEW Address</label>
-            <input type="text" name="address">
-        </div>
-        <div>
-            <label for="age">NEW Age</label>
-            <input type="text" name="age">
-        </div>
-        <button type="submit">OK</button>
-    </form>
+<div class="profile">
+    <h1>EDIT INFO ABOUT USER</h1>
+    <h2>EMAIL IS A KEY THEN YOU CAN`T CHANGE THIS FIELD</h2>
 </div>
+<form method="post" action="">
+    <div>
+        <label for="login">Login (email)</label>
+        <input type="email" name="login" required>
+    </div>
+    <div>
+        <label for="password">NEW Password</label>
+        <input type="password" class="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Должен содержать символы или буквы большого  и малого регистра, и иметь не менее 8 символов">
+    </div>
+    <div>
+        <label for="name">NEW Name</label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label for="address">NEW Address</label>
+        <input type="text" name="address">
+    </div>
+    <div>
+        <label for="age">NEW Age</label>
+        <input type="text" name="age">
+    </div>
+    <button type="submit">OK</button>
+</form>

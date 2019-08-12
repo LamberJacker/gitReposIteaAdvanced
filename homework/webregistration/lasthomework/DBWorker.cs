@@ -14,7 +14,7 @@ namespace lasthomework
         static string username = "root";
         static string password = "";
 
-        public static MySqlConnection getMySqlConnection() //method for connet to database 
+        public static MySqlConnection getMySqlConnection()
         {
             return MySQLConnector.getConnection(host, port, db, username, password);
         }

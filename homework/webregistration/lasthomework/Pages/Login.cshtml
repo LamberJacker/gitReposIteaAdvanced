@@ -1,8 +1,29 @@
 ﻿@page
+@using Microsoft.AspNetCore.Http
 @model AboutModel
-@{
-    ViewData["Title"] = "Login";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>Use this form to login in DATABASE</h3>
 
+@{
+    if (HttpContext.Request.Method == "POST")
+    {
+        string login = Request.Form["login"];
+        string password = Request.Form["password"];
+        UserControler uc = new UserControler();
+        bool checklog = uc.Login(login, password);
+        string showlogin = checklog ? "Sucsess" : "Fail";
+        <h2>@showlogin</h2>
+    }
+}
+
+<form action="" method="post">
+    <h1>LOGIN</h1>
+    <h3>Use this form to login in DATABASE</h3>
+    <div>
+        <label for="login">Login (email)</label>
+        <input type="email" name="login" required>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="text" name="password" required>
+    </div>
+    <button type="submit">OK</button>
+</form>

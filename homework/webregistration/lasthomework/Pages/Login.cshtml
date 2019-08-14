@@ -8,9 +8,8 @@
         string login = Request.Form["login"];
         string password = Request.Form["password"];
         UserControler uc = new UserControler();
-        bool checklog = uc.Login(login, password);
-        string showlogin = checklog ? "SUCCESS LOG" : "FAIL LOG";
-        <h2>@showlogin</h2>
+        string resultlog = uc.Login(login, password);
+        <h2>@resultlog</h2>
     }
 }
 
@@ -23,7 +22,7 @@
     </div>
     <div>
         <label for="password">Password</label>
-        <input type="text" name="password" required>
+        <input type="password" name="password" required>
     </div>
     <button type="submit">OK</button>
 </form>

@@ -10,9 +10,9 @@
         string address = Request.Form["address"];
         string age = Request.Form["age"];
         UserControler uc = new UserControler();
-        bool checklog = uc.EditUser(login, password, name, address, age);
-        string showlogin = checklog ? "SUCCESS EDIT" : "FAIL EDIT";
-        <h2>@showlogin</h2>
+        string resultEdit = uc.EditUser(login, password, name, address, age);
+        <h2>New info about : @login</h2>
+        <h2>@resultEdit</h2>
     }
 }
 <div class="profile">
@@ -26,8 +26,7 @@
     </div>
     <div>
         <label for="password">NEW Password</label>
-        <input type="password" class="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Должен содержать символы или буквы большого  и малого регистра, и иметь не менее 8 символов">
+        <input type="password" class="pass" name="password">
     </div>
     <div>
         <label for="name">NEW Name</label>

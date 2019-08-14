@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<heros>
+	<hero>
+		<name>Tryndamere</name>
+		<level>10</level>
+		<ultimate>Bers</ultimate>
+	</hero>
+	<hero>
+		<name>Ashe</name>
+		<level>13</level>
+		<ultimate>Arrow</ultimate>
+	</hero>
+</heros>

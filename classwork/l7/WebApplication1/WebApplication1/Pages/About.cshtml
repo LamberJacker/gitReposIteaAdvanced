@@ -1,0 +1,29 @@
+﻿@page
+@model AboutModel
+@{
+    ViewData["Title"] = "About";
+    if (HttpContext.Request.Method == "POST")
+    {
+        string login = Request.Form["name"];
+        string pass = Request.Form["password"];
+        MyClass c1 = new MyClass();
+        string str = (c1.getAut(login, pass));
+        string color = str.Equals("Access") ? "green" : "red";
+        <h1 style="color:@color">@str</h1>
+    }
+
+    }
+    <h2>@ViewData["Title"]</h2>
+    <h3>@Model.Message</h3>
+
+    <p>
+        Use this area to provide additional information.
+        <form action="" method="post">
+            <table>
+                <tr><td>Login</td><td><input type="text" name="name" /></td></tr>
+                <tr><td>Pass</td><td><input type="password" name="password" /></td></tr>
+                <tr><td></td><td><input type="submit" value="OK" /></td></tr>
+            </table>
+        </form>
+
+    </p>

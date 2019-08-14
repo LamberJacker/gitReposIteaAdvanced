@@ -13,9 +13,8 @@
         string age = Request.Form["age"];
         string sex = Request.Form["sex"];
         UserControler uc = new UserControler();
-        bool checklog = uc.AddUser(login, password, repassword, name, address, age, sex);
-        string showlogin = checklog ? "SUCCESS REG" : "FAIL REG";
-        <h2>@showlogin</h2>
+        string result = uc.AddUser(login, password, repassword, name, address, age, sex);
+        <h2>@result</h2>
     }
 }
 <div class="profile">
@@ -29,8 +28,7 @@
     </div>
     <div>
         <label for="password">Password</label>
-        <input type="password" class ="pass" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                title="Должен содержать символы или буквы большого  и малого регистра, и иметь не менее 8 символов" required>
+        <input type="password" class ="pass" name="password" required>
     </div>
     <div>
         <label for="repassword">RePassword</label>

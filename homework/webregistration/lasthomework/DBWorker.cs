@@ -10,7 +10,7 @@ namespace lasthomework
     {
         static string host = "127.0.0.1";
         static int port = 3306;
-        static string db = "itea";
+        static string db = "lesson";
         static string username = "root";
         static string password = "";
 

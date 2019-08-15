@@ -108,20 +108,23 @@ namespace lasthomework
         String Validate(string login, string password, string repassword, string name, string address, string age, string sex)
         {
             bool intage = Int32.TryParse(age, out int resultage);
+            string errorValid = "Registration erorr: ";
+            bool erorrFlag = false;
             // login(email) check
-            if (!IsValidEmail(login)) return "wrong type of login";
+            if (!IsValidEmail(login)) { errorValid += "Wrong type of login;"; erorrFlag = true; }
             // pass check
-            else if (!password.Equals(repassword)) return "wrong repassword";
+            if (!password.Equals(repassword)) { errorValid += "Wrong repassword;"; erorrFlag = true; }
             // name check
-            else if (!IsValidName(name)) return "wrong type of name";
+            if (!IsValidName(name)) { errorValid += "Wrong type of name;"; erorrFlag = true; }
             // address check
-            else if (!IsValidAddress(address)) return "wrong name address";
+            if (!IsValidAddress(address)) { errorValid += "Wrong name address;"; erorrFlag = true; }
             // age check
-            else if (!intage) return "wrong type of age";
-            else if (resultage < 0 || resultage > 130) return "wrong age";
+            if (!intage) { errorValid += "Wrong type of age;"; erorrFlag = true; }
+            if (resultage < 0 || resultage > 130) { errorValid += "Wrong age;"; erorrFlag = true; }
             //sex check
-            else if (!IsValidSex(sex)) return "wrong gender";
-            return "ok";
+            if (!IsValidSex(sex)) errorValid += "Wrong gender;";
+            if (erorrFlag) return errorValid;
+            else return "ok";
         }
         String ValidateName(string name)
         {

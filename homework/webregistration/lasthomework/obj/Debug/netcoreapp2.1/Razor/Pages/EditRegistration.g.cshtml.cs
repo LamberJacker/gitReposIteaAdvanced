@@ -98,7 +98,7 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral("<div class=\"profile\">\r\n    <h1>EDIT INFO ABOUT USER</h1>\r\n    <h2>EMAIL IS A KEY THEN YOU CAN`T CHANGE THIS FIELD</h2>\r\n</div>\r\n");
             EndContext();
             BeginContext(697, 670, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "768e00a3523048eb90c62fe4e7b8cb68", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "618a4fa4bc0e496695de62f4dae5d2f8", async() => {
                 BeginContext(727, 633, true);
                 WriteLiteral(@"
     <div>
